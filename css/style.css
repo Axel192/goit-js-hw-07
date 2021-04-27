@@ -1,0 +1,15 @@
+.red {
+  width: 800px;
+  height: 600px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.container {
+  margin: auto;
+  width: 800px;
+}
