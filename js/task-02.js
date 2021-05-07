@@ -7,7 +7,13 @@ const ingredients = [
   'Приправы',
 ];
 
-const ingredientsEl = document.querySelector('#ingredients')
-const pEl = document.querySelector('p')
-ingredients.forEach(ingr => ingredientsEl.innerHTML+=`<li>${ingr}</li>`)
- pEl.append(ingredientsEl) 
+const ingredientsList = document.querySelector('#ingredients');
+const ingredientsItems = ingredients.map(food => {
+  const ingredientsLi = document.createElement('li');
+  ingredientsLi.textContent = food;
+  
+  return ingredientsLi;
+});
+ingredientsList.append(...ingredientsItems);
+
+console.log(ingredientsItems);
